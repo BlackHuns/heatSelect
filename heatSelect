@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class heatSelect {
+    public static void main(String[] args){
+        int celcius;
+
+
+        Scanner tara = new Scanner(System.in);
+
+        System.out.print("Havanın Sıcaklığını giriniz: ");
+        celcius = tara.nextInt();
+
+        if (celcius > 25){
+            System.out.println("BU havada yüzmeye gidilebilir.");
+        } if(celcius>=10 && celcius <= 25){
+            System.out.println("Bu hava da piknik yapılır.");
+        }
+        if (celcius >=5 && celcius <=15){
+            System.out.println("BU havada sinemaya gidilir.");
+        } else if (celcius < 5) {
+            System.out.println("Bu havada Kayak yapılır.");
+        }
+    }
+}
